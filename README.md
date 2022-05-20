@@ -1,6 +1,6 @@
 # YT-Audio
 
-YouTube link to opus file in a minute! Find your audio file in the ~/Music/ directory.
+YouTube URL to opus file in a minute! Find your audio file in the `~/Music/` directory. Please follow the instructions below.
 
 ## Install Dependencies
 
