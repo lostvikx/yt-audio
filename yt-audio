@@ -3,7 +3,7 @@
 # $1 is a required argument
 if [ "$1" = "" ]
 then
-  echo "Usage: $0 <YouTube_URL>"
+  echo "Usage: $0 \"<YouTube_URL>\""
   exit 1
 fi
 
@@ -20,5 +20,5 @@ fi
 
 cd $music_dir
 
-# Add --embed-thumbnail flag for music cover!
+# Add --embed-thumbnail flag for music cover! (only mp3 format)
 youtube-dl --audio-quality 160K --restrict-filenames --extract-audio --audio-format opus -o "%(title)s.%(ext)s" $YouTube_URL

@@ -20,21 +20,11 @@ sudo ln -s /usr/bin/python3 /usr/local/bin/python
 git clone https://github.com/lostvikx/yt-audio.git
 ```
 
-Either copy,
-
-```bash
-cd yt-audio/ && cp yt-audio.sh ~/.local/bin/
-cd ~/.local/bin/
-sudo chmod +x yt-audio.sh
-```
-
-or create a symbolic link
-
 ```bash
 cd yt-audio/
-sudo ln -s yt-audio.sh ~/.local/bin/yt-audio.sh
+cp yt-audio ~/.local/bin/
 cd ~/.local/bin/
-sudo chmod +x yt-audio.sh
+sudo chmod +x yt-audio
 ```
 
 ## Usage
@@ -42,5 +32,5 @@ sudo chmod +x yt-audio.sh
 Using the **double quotes** is recommended.
 
 ```bash
-yt-audio "https://www.youtube.com/watch?v=Uk1hv6h7O1Y&ab_channel=Bazzi"
+yt-audio "<YouTube_URL>"
 ```
