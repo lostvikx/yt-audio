@@ -1,6 +1,6 @@
-# YTAudio
+# YT-Audio
 
-YouTube link to mp3 file.
+YouTube link to opus file in a minute! Find your audio file in the ~/Music/ directory.
 
 ## Install Dependencies
 
