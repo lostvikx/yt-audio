@@ -11,9 +11,7 @@ YouTube_URL="$1"
 music_dir="$HOME/Music/"
 
 # ~/Music/ doesn't exist
-if [ -d "$music_dir" ]; then
-  echo "Notification: ${music_dir} exists!"
-else
+if [ ! -d "$music_dir" ]; then
   echo "Notification: ${music_dir} was not found in $HOME directory."
   mkdir $music_dir
 fi
