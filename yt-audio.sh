@@ -5,7 +5,14 @@
 # sudo chmod a+rx /usr/local/bin/youtube-dl
 # sudo ln -s /usr/bin/python3 /usr/local/bin/python
 
-yt_url="$1"
+# $1 is a required argument
+if [ "$1" = "" ]
+then
+  echo "Usage: $0 <YouTube_URL>"
+  exit 1
+fi
+
+YouTube_URL="$1"
 music_dir="$HOME/Music/"
 
 # cd ~/Music/ || mkdir -p ./Music/ && cd Music/
@@ -19,6 +26,6 @@ else
   cd $music_dir
 fi
 
-# youtube-dl --audio-quality 160k --restrict-filenames --extract-audio --audio-format mp3 --embed-thumbnail -o "%(title)s.%(ext)s" $yt_url
+# youtube-dl --audio-quality 160k --restrict-filenames --extract-audio --audio-format mp3 --embed-thumbnail -o "%(title)s.%(ext)s" $YouTube_URL
 
-# touch hello.txt
+# touch $YouTube_URL.txt
