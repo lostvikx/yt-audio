@@ -10,16 +10,15 @@ fi
 YouTube_URL="$1"
 music_dir="$HOME/Music/"
 
-# cd ~/Music/ || mkdir -p ./Music/ && cd Music/
-
+# ~/Music/ doesn't exist
 if [ -d "$music_dir" ]; then
   echo "Notification: ${music_dir} exists!"
-  cd $music_dir
 else
   echo "Notification: ${music_dir} was not found in $HOME directory."
   mkdir $music_dir
-  cd $music_dir
 fi
+
+cd $music_dir
 
 # Add --embed-thumbnail flag for music cover!
 youtube-dl --audio-quality 160K --restrict-filenames --extract-audio --audio-format opus -o "%(title)s.%(ext)s" $YouTube_URL
