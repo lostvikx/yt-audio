@@ -21,5 +21,5 @@ else
   cd $music_dir
 fi
 
-youtube-dl --audio-quality 160k --restrict-filenames --extract-audio --audio-format mp3 --embed-thumbnail -o "%(title)s.%(ext)s" $YouTube_URL
-
+# Add --embed-thumbnail flag for music cover!
+youtube-dl --audio-quality 160K --restrict-filenames --extract-audio --audio-format opus -o "%(title)s.%(ext)s" $YouTube_URL

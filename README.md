@@ -16,6 +16,8 @@ sudo ln -s /usr/bin/python3 /usr/local/bin/python
 
 ## Usage
 
+Using the double quotes is recommended.
+
 ```bash
 yt-audio "https://www.youtube.com/watch?v=Uk1hv6h7O1Y&ab_channel=Bazzi"
 ```
