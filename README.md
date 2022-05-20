@@ -33,6 +33,7 @@ or create a symbolic link
 ```bash
 cd yt-audio/
 sudo ln -s yt-audio.sh ~/.local/bin/yt-audio.sh
+cd ~/.local/bin/
 sudo chmod +x yt-audio.sh
 ```
 
