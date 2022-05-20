@@ -1,2 +1,3 @@
-# yt-audio
+# YTAudio
+
 Download audio from a YouTube video
